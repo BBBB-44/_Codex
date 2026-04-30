@@ -121,3 +121,16 @@ Each level increment the search difficulty
 Use context, not hierarchy
 
 : Instead of relying on deeply nested folders, use context to organize your files. Label your files clearly and use tags or metadata to make them easy to find.
+
+
+You can still add “database‑like” behavior via tags and front‑matter:
+
+text
+---
+title: Understanding JOINs in SQL
+tags: sql, databases, beginner
+created: 2026-04-30
+links: sql/optimization.md
+---
+
+Then tools like Obsidian, Hugo, or simple scripts can act almost like a light‑weight DB on top of the files.
