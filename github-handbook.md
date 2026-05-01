@@ -3,4 +3,4 @@
 ![alt text](image.png)
 
 2. Use HTML img tags, not markdown syntax
-<img src="image.png" alt="description" width="800"> 
+<img src="image.png" alt="alt text"> 
