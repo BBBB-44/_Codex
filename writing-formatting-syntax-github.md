@@ -7,6 +7,8 @@ In this article
 - [Styling text](#styling-text)
 - [Quoting text](#quoting-text)
 - [Quoting code](#quoting-code)
+- [Syntax highlighting](#syntax-highlighting)
+- [Fenced code blocks](#fenced-code-blocks)
 - [Supported color models](#supported-color-models)
 - [Links](#links)
 - [Section links](#section-links)
@@ -106,9 +108,53 @@ git status
 git add
 git commit
 
-For more information, see [Creating and highlighting code blocks](/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
 
-If you are frequently editing code snippets and tables, you may benefit from enabling a fixed-width font in all comment fields on GitHub. For more information, see [About writing and formatting on GitHub](/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github#enabling-fixed-width-fonts-in-the-editor).
+## Fenced code blocks
+
+You can create fenced code blocks by placing triple backticks ``` before and after the code block. We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
+Tip
+
+To preserve your formatting within a list, make sure to indent non-fenced code blocks by eight spaces.
+
+To display triple backticks in a fenced code block, wrap them inside quadruple backticks.
+
+````
+```
+Look! You can see my backticks.
+```
+````
+
+## Syntax highlighting
+
+You can add an optional language identifier to enable syntax highlighting in your fenced code block.
+
+Syntax highlighting changes the color and style of source code to make it easier to read.
+
+For example, to syntax highlight Ruby code:
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+This will display the code block with syntax highlighting:
+
+Screenshot of three lines of Ruby code as displayed on GitHub. Elements of the code display in purple, blue, and red type for scannability.
+
+Tip
+
+When you create a fenced code block that you also want to have syntax highlighting on a GitHub Pages site, use lower-case language identifiers.
+
+We use Linguist to perform language detection and to select third-party grammars for syntax highlighting. You can find out which keywords are valid in the languages YAML file.
+
 
 ## Supported color models
 
