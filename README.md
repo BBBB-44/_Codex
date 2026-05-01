@@ -7,11 +7,9 @@ GitHub can be conceptualized as a contemporary instantiation of the commonplace 
 
 Moreover, GitHub’s inherently distributed and optionally public architecture facilitates both dissemination and collaborative knowledge production. It transforms the traditionally private codex into a potentially intersubjective space, where annotation, critique, and iterative refinement can occur across temporal and geographic boundaries.
 
-Finally, the digital substrate of GitHub supports advanced operations on information—such as modular reorganization, forking (conceptual duplication with divergence), and computational analysis—thereby extending the affordances of the classical commonplace book. In this sense, it is not merely a repository of notes, but an active environment for the manipulation, recombination, and interrogation of knowledge.
+The platform’s digital structure also enables advanced operations on information—such as modular reorganization, forking (conceptual duplication with divergence), and computational analysis—thereby extending the affordances of the classical commonplace book. In this sense, it is not merely a repository of notes, but an active environment for the manipulation, recombination, and interrogation of knowledge.
 
-Consequently its digital format allows for efficient organization, editing, duplication, and analysis of information. 
-
-Lastly the online access of the information via github interface allow availability on a large disposition of device. i.e. accessible from almost any device with a web browser : from a computer, to a cellphone, tablet or even asmart watch.
+Its digital format further allows for efficient organization, editing, duplication, and analysis of information. Finally, because GitHub is accessible through a web browser, its contents can be reached from a wide range of devices—including computers, smartphones, tablets, smartwatches and many more.
 
 # A note on the value it gain over time and its day to day usage
 
