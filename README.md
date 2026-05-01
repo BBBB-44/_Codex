@@ -13,6 +13,18 @@ Consequently its digital format allows for efficient organization, editing, dupl
 
 Lastly the online access of the information via github interface allow availability on a large disposition of device. i.e. accessible from almost any device with a web browser : from a computer, to a cellphone, tablet or even asmart watch.
 
+# A note on the value it gain over time and its day to day usage
+
+The value of a commonplace book lies in its capacity to function as a cumulative and evolving archive of thought, where fragments of reading, observation, and reflection are preserved and placed into meaningful relation. Over time, its pertinence increases rather than diminishes: what may begin as scattered excerpts or provisional notes gradually acquires coherence as patterns, themes, and intellectual preoccupations emerge. This layering transforms the commonplace book into a site of long-term cognition, enabling retrospective insight and the reactivation of past ideas within new contexts. Its enduring relevance stems from this temporal depth, as earlier entries are continually reinterpreted, recombined, and recontextualized in light of subsequent knowledge.
+
+In daily practice, a commonplace book can be used as a disciplined yet flexible tool for capturing and processing information. One might record striking passages from readings, summarize arguments, note personal reflections, or pose questions that arise throughout the day. Regular engagement—whether through brief entries or more extended annotations—cultivates attentiveness and intellectual continuity. Over time, the book becomes a personalized reference system, facilitating recall, synthesis, and creative recombination. Its utility lies not only in storage but in use: revisiting, cross-referencing, and building upon prior entries turns it into an active instrument for thinking rather than a passive repository of notes.
+
+# Past attemps 
+
+My earlier attempts at building a commonplace system took several forms, each revealing its own limitations over time. I initially relied on manual compilation—handwritten notebooks and loosely organized pages—which, while intellectually engaging, quickly became tedious to maintain. As the volume of material grew, reorganizing entries or revisiting past notes became increasingly impractical. The rigidity of the format made it difficult to manipulate information: duplicating, restructuring, or synthesizing ideas required disproportionate effort, ultimately limiting flexibility.
+
+I then transitioned to a simple digital system based on nested folders containing text files, images, and other documents. Although this approach improved storage capacity and allowed for multimodal content, it lacked coherence and accessibility across contexts. Navigating deeply nested structures became cumbersome, and the absence of version control meant I had little visibility into how my ideas evolved over time. More recently, I experimented with tools such as Obsidian and Google Drive. While these platforms offered synchronization and more advanced interfaces, they introduced their own challenges: a certain loss of simplicity, limited control over versioning, and constraints in customization. In each case, the system either became too rigid, too opaque, or too complex, falling short of supporting a fluid and sustainable intellectual workflow.
+
 # proposed structure
 
 inbox/ for unprocessed captures.
