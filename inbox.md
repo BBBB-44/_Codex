@@ -13,3 +13,5 @@ markdown
 Blender
 font height, size, etc..
 how to use github as a website.....
+seo
+marketing
