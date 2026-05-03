@@ -28,7 +28,7 @@ ORDER BY
 ## Create Table 
 
  
-
+```
 CREATE TABLE table_name ( 
   column1 datatype constraint, 
   column2 datatype constraint, 
@@ -55,11 +55,12 @@ SELECT column1, column2
 FROM table_name 
 
 WHERE condition; 
-
+```
  
 
 Create view from multiple table 
 
+```
 CREATE VIEW view_name AS 
 
 SELECT * FROM table_name 
@@ -83,13 +84,13 @@ SELECT * FROM table_name
 UNION ALL 
 
 SELECT * FROM table_name; 
-
+```
  
 
  
 
 Create view join to another view 
-
+```
 CREATE VIEW view_name AS 
 
 SELECT 
@@ -103,7 +104,7 @@ FROM table_name t
 JOIN view_name_2 v 
 
     ON t.noJoueur = v.noJoueur; 
-
+```
  
 
 ## Stored procedures 
@@ -116,9 +117,8 @@ JOIN view_name_2 v
 
 Create stored procedure with input params 
 
+```
 DELIMITER // 
-
- 
 
 CREATE PROCEDURE psResultatsJoueurs( 
 
@@ -153,7 +153,5 @@ BEGIN
       AND anneeTournoi = anneeTournoi; 
 
 END // 
-
- 
-
 DELIMITER ; 
+```
