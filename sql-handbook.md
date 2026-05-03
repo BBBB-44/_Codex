@@ -7,7 +7,7 @@
 
 ## Schema explorer 
 
-
+```
 SELECT 
     TABLE_NAME, 
     COLUMN_NAME, 
@@ -22,7 +22,7 @@ WHERE
     TABLE_SCHEMA = DATABASE()
 ORDER BY 
     TABLE_NAME, ORDINAL_POSITION;
-
+```
  
 
 ## Create Table 
