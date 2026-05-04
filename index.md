@@ -34,7 +34,7 @@ I then transitioned to a simple digital system based on nested folders containin
 
 
 <ul>
-{% for file in site._Codex %}
+{% for file in site._codex %}
   <li>
     <a href="{{ file.url }}">{{ file.name }}</a>
   </li>
