@@ -1,4 +1,4 @@
 collections:
-_codex:
+ codex:
     output: true
 markdown: kramdown
