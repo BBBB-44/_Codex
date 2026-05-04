@@ -36,7 +36,7 @@ I then transitioned to a simple digital system based on nested folders containin
 <ul>
 {% for file in site.codex %}
   <li>
-    <a href="{{ file.url }}">{{ file.title }}</a>
+       <a href="{{ file.url | relative_url }}">{{ file.title }}</a>
   </li>
 {% endfor %}
 </ul>
