@@ -1,5 +1,6 @@
-````md
 # Use Case Testing Strategy
+
+<img width="200" height="150" alt="200w" src="https://github.com/user-attachments/assets/c75c7fad-21f2-4aee-99de-c241689b1099" />
 
 ## Overview
 
