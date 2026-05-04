@@ -1,4 +1,4 @@
 collections:
 _Codex:
     output: true
-theme: null
+markdown: kramdown
