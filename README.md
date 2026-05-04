@@ -25,6 +25,6 @@ I then transitioned to a simple digital system based on nested folders containin
 
 # proposed structure
 
-inbox/ for unprocessed captures.
-archive/ for retired or obsolete notes.
+- inbox/ for unprocessed captures.
+- archive/ for retired or obsolete notes.
 
