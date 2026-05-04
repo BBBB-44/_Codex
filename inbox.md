@@ -1,5 +1,6 @@
 subject to explore :
 
+```
 ai usage
 about source
 why i dont bother with source : because when i paste a url that should redirect to your blog, article or paper, i hva no garantees that your content will be available in the future.
@@ -16,3 +17,5 @@ how to use github as a website.....
 seo
 marketing
 learning & teaching theory
+using github page to display the codex, or maybe wordpress?
+```
