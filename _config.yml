@@ -2,3 +2,8 @@ collections:
  codex:
     output: true
 markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
