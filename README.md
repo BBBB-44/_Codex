@@ -28,3 +28,15 @@ I then transitioned to a simple digital system based on nested folders containin
 - inbox/ for unprocessed captures.
 - archive/ for retired or obsolete notes.
 
+
+# Files
+
+
+
+<ul>
+{% for file in site.files %}
+  <li>
+    <a href="{{ file.url }}">{{ file.name }}</a>
+  </li>
+{% endfor %}
+</ul>
