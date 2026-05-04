@@ -1,7 +1,5 @@
 # Use Case Testing Strategy
 
-<img width="200" height="150" alt="200w" src="https://github.com/user-attachments/assets/c75c7fad-21f2-4aee-99de-c241689b1099" />
-
 ## Overview
 
 Use case testing focuses on validating real user behaviors instead of isolated units of logic. The objective is to ensure that critical user journeys function correctly under realistic conditions, including navigation, asynchronous operations, and partial failures.
