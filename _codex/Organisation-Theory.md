@@ -1,3 +1,6 @@
+---
+---
+
 ## Suggestion
 
 If you want one rule to anchor the whole project, use this: **store notes for retrieval, not just storage**. In practice that means each note should answer:  
