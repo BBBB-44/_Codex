@@ -23,6 +23,11 @@ My earlier attempts at building a commonplace system took several forms, each re
 
 I then transitioned to a simple digital system based on nested folders containing text files, images, and other documents. Although this approach improved storage capacity and allowed for multimodal content, it lacked coherence and accessibility across contexts. Navigating deeply nested structures became cumbersome, and the absence of version control meant I had little visibility into how my ideas evolved over time. More recently, I experimented with tools such as Obsidian and Google Drive. While these platforms offered synchronization and more advanced interfaces, they introduced their own challenges: a certain loss of simplicity, limited control over versioning, and constraints in customization. In each case, the system either became too rigid, too opaque, or too complex, falling short of supporting a fluid and sustainable intellectual workflow.
 
+# Beyond Authorship: The Nature of Synthesized Information
+
+This collection should not be understood as original or proprietary work in the traditional sense, but rather as an amalgam of information encountered over time. It is the result of continuous exposure to diverse sources, ideas, and explanations that have been absorbed, recombined, and reinterpreted into a personal synthesis. The emphasis is therefore not on authorship or creation ex nihilo, but on the process of aggregation and internal reconstruction of existing knowledge.
+
+
 # proposed structure
 
 - inbox/ for unprocessed captures.
