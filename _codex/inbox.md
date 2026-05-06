@@ -3,6 +3,7 @@
 
 subject to explore :
 
+```
 ai usage
 to exlore : what are ts interface 
 how to decouple api and ui
@@ -21,3 +22,4 @@ seo
 marketing
 learning & teaching theory
 using github page to display the codex, or maybe wordpress?
+```
