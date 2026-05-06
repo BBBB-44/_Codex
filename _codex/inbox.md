@@ -3,9 +3,7 @@
 
 subject to explore :
 
-```
 ai usage
-In no way i describe the collection here as my personnal work. it is an amalgam of information found over time.
 to exlore : what are ts interface 
 how to decouple api and ui
 how to debug more efficiently : 
@@ -23,4 +21,3 @@ seo
 marketing
 learning & teaching theory
 using github page to display the codex, or maybe wordpress?
-```
