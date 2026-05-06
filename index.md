@@ -38,9 +38,14 @@ This collection should not be understood as original or proprietary work in the 
 
 
 
-<ul>
+<button onclick="sortByName()">Sort by name</button>
+<button onclick="sortByModified()">Sort by modified</button>
+
+<ul id="file-list">
 {% for file in site.codex %}
-  <li>
+  <li 
+    data-title="{{ file.title | escape }}"
+    data-modified="{{ file.last_modified_at | default: file.date | date: '%s' }}">
        <a href="{{ file.url | relative_url }}">{{ file.title }}</a>
   </li>
 {% endfor %}
