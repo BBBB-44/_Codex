@@ -147,3 +147,13 @@ Information hoarding is less a problem of storage capacity than of epistemic str
 Saving documentation like “how GitHub Pages works” is often redundant because it externalizes responsibility for understanding without improving recall or competence. A more effective approach emphasizes mental models, selective note-taking, and just-in-time retrieval.
 
 In short: don’t build a library you won’t read—build a mind that knows what to look for, when, and why.
+
+The deeper shift
+The real solution is not “better bookmarking.”
+It’s accepting this principle:
+The web is not a library. It is a river.
+Trying to freeze every useful page into personal storage creates fragility of its own. A resilient system assumes:
+links will break
+pages will move
+information will disappear
+and compensates by storing understanding instead of location.
