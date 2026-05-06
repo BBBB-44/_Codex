@@ -9,12 +9,32 @@
   --border: #21262d;
 }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-inline: clamp(16px, 4vw, 32px);
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family:
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  "Noto Sans",
+  "Liberation Sans",
+  sans-serif;
   line-height: 1.6;
   font-size: 15.5px;
+  max-width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -34,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: -0.02em;
+  font-family: inherit;
 }
 
 h1 { font-size: 2.1rem; }
