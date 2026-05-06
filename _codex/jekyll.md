@@ -1,8 +1,6 @@
 ---
 ---
 
-
-````md
 # Intro
 
 **Jekyll** is a static site generator that turns simple text files (like Markdown) into a complete website. It’s tightly integrated with GitHub, which means you can use it with GitHub Pages to build blogs, documentation sites, or portfolios without needing a backend server.  
@@ -105,7 +103,7 @@ collections:
     output: true
 ```
 
-### Step 2: Create files in `_projects/` <!-- must start with "_" -->
+### Step 2: Create files in `_projects/` # must start with "_" 
 
 ```yaml
 ---
@@ -122,7 +120,4 @@ Project description here.
     <li>{{ project.title }}</li>
   {% endfor %}
 </ul>
-```
-
-```
 ```
