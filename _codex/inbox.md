@@ -4,7 +4,6 @@
 subject to explore :
 
 ```
-ai usage
 to exlore : what are ts interface 
 how to decouple api and ui
 how to debug more efficiently : 
