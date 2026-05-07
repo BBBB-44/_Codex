@@ -1,5 +1,122 @@
 ---
 ---
+## intro
+in C#, almost everything is treated as an object, and many built-in types are actually classes or structs from the .NET framework.
+
+```
+object
+ ├── class
+ │    ├── string
+ │    ├── Random
+ │    └── Book
+ │
+ ├── struct
+ │    ├── int
+ │    ├── bool
+ │    └── double
+ │
+ ├── interface
+ └── enum
+```
+
+## Overview
+
+Here is a class example of a book
+
+```
+//using System; imports the built-in .NET System namespace so you can use common classes like Console, String, DateTime, etc., without writing System. every time.
+using System;
+
+// public      = access modifier (accessible from anywhere)
+// class       = type declaration keyword
+// Book        = class name / identifier
+public class Book
+{
+    // Properties
+    // public       = access modifier
+    // string       = data type
+    // Title        = property name
+    // { get; set;} = getter and setter (read/write access)
+    public string Title { get; set; }
+    public string Author { get; set; }
+    public string ISBN { get; set; }
+    public int PublishedYear { get; set; }
+    public int Pages { get; set; }
+    public bool IsAvailable { get; set; }
+
+    // Constructor
+    // public                 = access modifier
+    // Book                   = constructor name (must match class name)
+    // (...)                  = parameters passed into constructor
+    public Book(string title, string author, string isbn, int publishedYear, int pages)
+    {
+        Title = title;
+        Author = author;
+        ISBN = isbn;
+        PublishedYear = publishedYear;
+        Pages = pages;
+        IsAvailable = true;
+    }
+
+    // Method to borrow the book
+    // public       = access modifier
+    // void         = return type (returns nothing)
+    // BorrowBook   = method name
+    // ()           = no parameters
+    public void BorrowBook()
+    {
+        if (IsAvailable)
+        {
+            IsAvailable = false;
+            Console.WriteLine($"You borrowed \"{Title}\".");
+        }
+        else
+        {
+            Console.WriteLine($"\"{Title}\" is currently unavailable.");
+        }
+    }
+
+    // Method to return the book
+    public void ReturnBook()
+    {
+        IsAvailable = true;
+        Console.WriteLine($"You returned \"{Title}\".");
+    }
+
+    // Display book information
+    public void DisplayInfo()
+    {
+        Console.WriteLine("Book Information:");
+        Console.WriteLine($"Title: {Title}");
+        Console.WriteLine($"Author: {Author}");
+        Console.WriteLine($"ISBN: {ISBN}");
+        Console.WriteLine($"Published Year: {PublishedYear}");
+        Console.WriteLine($"Pages: {Pages}");
+        Console.WriteLine($"Available: {IsAvailable}");
+    }
+}
+```
+Example usage:
+```
+class Program
+{
+    static void Main()
+    {
+        Book book = new Book(
+            "The Hobbit",
+            "J.R.R. Tolkien",
+            "978-0547928227",
+            1937,
+            310
+        );
+
+        book.DisplayInfo();
+
+        book.BorrowBook();
+        book.ReturnBook();
+    }
+}
+```
 
 ## Class
 a class is a blueprint or template for creating objects, encapsulating data (fields, properties and constants) and behavior (methods, events, constructors and nested types) into a single unit. 
@@ -396,88 +513,132 @@ class Program
     }
 }
 
-Feature
-Interface
-Inheritance
-Purpose
-Define a contract
-Share code & behavior
-Implementation
-None (just signatures)
-Base class can have code
-Multiple?
-Yes, a class can implement multiple interfaces
-No, single inheritance only
-Relationship
-“Can do this”
-“Is a type of this”
-When to use
-Different classes share capabilities (flyable, serializable, etc.)
-Classes naturally form a hierarchy and share common code
+# Interface vs Inheritance
 
+| Feature | Interface | Inheritance |
+|---|---|---|
+| Purpose | Define a contract | Share code & behavior |
+| Implementation | None (just signatures) | Base class can have code |
+| Multiple? | Yes, a class can implement multiple interfaces | No, single inheritance only |
+| Relationship | “Can do this” | “Is a type of this” |
+| When to use | Different classes share capabilities (flyable, serializable, etc.) | Classes naturally form a hierarchy and share common code |
 
+---
 
+# Class Diagram
 
-Class diagram
-A class diagram is a type of static structure diagram that describes the structure of a system by showing the system's classes, their attributes, operations (or methods), and the relationships among objects.
+A class diagram is a type of **static structure diagram** that describes the structure of a system by showing:
 
-ClassType :  only specify if it affects design (abstract, interface, final).
+- Classes
+- Attributes
+- Operations (methods)
+- Relationships among objects
 
-ClassVisibility : only specify if you need to show module/package-level access.
+## Notes
 
-For most normal UML diagrams in a project, just the class name, properties, and methods are enough.
+- **ClassType**: only specify if it affects design (`abstract`, `interface`, `final`)
+- **ClassVisibility**: only specify if needed to show module/package-level access
 
+For most UML diagrams, the following are enough:
 
-Graphic
-ClassName
-PropertyVisibility PropertyName: PropertyType
-MethodVisibility MethodName(parameters): ReturnType
+- Class name
+- Properties
+- Methods
 
+---
 
-Car
--make: String
--model: String
--year: Int
-+start(): void
-+Stop(): void
+# UML Class Structure
 
+```text
+-------------------------
+|       ClassName       |
+-------------------------
+| visibility name:type  |
+-------------------------
+| visibility method()   |
+-------------------------
+```
 
+Example:
 
-PlantUML
+```text
+-------------------------
+|          Car          |
+-------------------------
+| -make: String         |
+| -model: String        |
+| -year: Int            |
+-------------------------
+| +start(): void        |
+| +stop(): void         |
+-------------------------
+```
+
+---
+
+# Visibility Symbols
+
+| Symbol | Meaning |
+|---|---|
+| `+` | Public |
+| `-` | Private |
+| `#` | Protected |
+| `~` | Package / Internal |
+
+---
+
+# PlantUML Example
+
+```plantuml
 class Player {
--string Name
-+int Health
-+Attack(int)
+    -string Name
+    +int Health
+    +Attack(int)
 }
+```
 
+---
 
+# Parameter Directionality
 
+In class diagrams, parameter directionality indicates the flow of information between classes through method parameters.
 
-Parameter Directionality
-In class diagrams, parameter directionality refers to the indication of the flow of information between classes through method parameters.
-It helps to specify whether a parameter is an input, an output, or both. This information is crucial for understanding how data is passed between objects during method calls.
+It specifies whether a parameter is:
 
-PlantUML
-Type
-Symbole
-Objectif
-Extension
-<|--
-Spécialisation d'une classe dans une hiérarchie
-Implémentation
-<|..
-Réalisation d'une interface par une classe
-Composition
-*--
-La partie ne peut exister sans le tout
-Agrégation
-o--
-La partie peut exister indépendamment du tout
-Dépendance
--->
-L'objet utilise un autre objet
-Dépendance
-..>
-Une forme plus faible de dépendance
+- Input
+- Output
+- Both input and output
 
+This helps explain how data is passed between objects during method calls.
+
+---
+
+# PlantUML Relationships
+
+| Type | Symbol | Description |
+|---|---|---|
+| Extension | `<\|--` | Specialization of a class in a hierarchy |
+| Implementation | `<\|..` | Realization of an interface by a class |
+| Composition | `*--` | The part cannot exist without the whole |
+| Aggregation | `o--` | The part can exist independently of the whole |
+| Dependency | `-->` | One object uses another object |
+| Weak Dependency | `..>` | A weaker form of dependency |
+
+---
+
+# Example Relationships
+
+```plantuml
+class Animal
+class Dog
+Animal <|-- Dog
+
+interface Flyable
+class Bird
+Flyable <|.. Bird
+
+class Car
+class Engine
+Car *-- Engine
+```
 
