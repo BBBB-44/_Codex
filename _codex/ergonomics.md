@@ -1,5 +1,6 @@
 Every position can hurt if you dont move
 
+so take an habitude of moving every hour. use a timer if nescessary.
 
 Everything is within arm reach
 
