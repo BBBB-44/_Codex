@@ -74,7 +74,47 @@
 
 ---
 
-## 4. Quick Cheat Sheet
+### 4. Check the trivial things first (seriously)
+Experienced engineers skip these. Fast engineers check them in 10 seconds and move on.
+
+Is it plugged in / running? (Service up? Container healthy?)
+
+Did the config file actually reload?
+
+Is there a typo in a variable name? (Case sensitivity)
+
+Is the environment pointing to the right database/API URL?
+
+Did you clear the cache? (Browser, Redis, CDN, opcache)
+
+These account for ~15% of "mysterious" bugs.
+
+---
+
+### 5. Add checkpoints
+Instead of vague logging, add pass/fail checkpoints along the execution path.
+
+python
+# Bad: log("got here")
+# Good:
+assert user_id is not None, "Checkpoint 1 failed: user_id missing"
+assert balance > 0, "Checkpoint 2 failed: balance zero or negative"
+When a checkpoint fails → you know exactly which step broke, no guessing.
+
+---
+
+### 6. Know when to escalate or reset
+Speed isn't always solving it yourself.
+
+After 45–60 minutes with zero progress → stop. Write down what you tried. Ask someone else (fresh eyes see what you're blind to).
+
+Reset your environment → fresh clone, clear caches, restart services. Sometimes the bug is in state, not code.
+
+Stubbornness is the enemy of efficiency.
+
+---
+
+## 7. Quick Cheat Sheet
 
 | When you see...                     | Do this first...                              |
 |-------------------------------------|-----------------------------------------------|
