@@ -25,6 +25,13 @@ the myth of information nesting : why is it fundamentally wrong
 What are stack traces
 how to use the network tabs
 effiency at arror message reading
+reommendation de produit
+About movies...
+How to give more personnality to my codex
+List of useful website
+List of cool website
+How to hack you brain (ex: wake up at 5 easily, etc..)
+System found (ex: how to archive, car notepad, etc..)
 ```
 on computer science
 ```
