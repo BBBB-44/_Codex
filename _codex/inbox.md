@@ -22,6 +22,8 @@ marketing
 learning & teaching theory
 using github page to display the codex, or maybe wordpress?
 the myth of information nesting : why is it fundamentally wrong
+What are stack traces
+how to use the network tabs
 ```
 on computer science
 ```
