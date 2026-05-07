@@ -1,3 +1,42 @@
+---
+---
+
+## how to make a character follow a path :
+
+step 1 : 
+
+make a bezier curve 
+Add/curve/bezier curve
+
+then go in edit mode to make the curve you want.
+
+(tips : put yourself in z view to have a flat curve)
+
+step 2 : make the character follow the path
+
+select the character rig
+
+go in object constraint property
+
+add an object constraint : follow path
+
+then select the bezier curve.
+
+click animate path.
+
+
+step 3 : make the walk animation loop
+
+select the character rig
+
+go in animation tab
+
+click on editor type, then select graph editor.
+
+press : shft + e
+
+then select : Make Cyclic
+
 ## transparency / depth sorting problem caused by “image as plane” materials.
 
 Fix (this usually solves it immediately)
