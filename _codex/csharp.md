@@ -3,7 +3,7 @@
 ## intro
 in C#, almost everything is treated as an object, and many built-in types are actually classes or structs from the .NET framework.
 
-```
+```text
 object
  ├── class
  │    ├── string
@@ -23,7 +23,7 @@ object
 
 Here is a class example of a book
 
-```
+```csharp
 //using System; imports the built-in .NET System namespace so you can use common classes like Console, String, DateTime, etc., without writing System. every time.
 using System;
 
@@ -97,7 +97,7 @@ public class Book
 }
 ```
 Example usage:
-```
+```csharp
 class Program
 {
     static void Main()
@@ -123,6 +123,8 @@ a class is a blueprint or template for creating objects, encapsulating data (fie
 
 Basic Syntax
 Classes are defined using the class keyword, usually within a namespace. The basic structure includes an optional access modifier which determines the class type, the class keyword, an identifier (name), and a body enclosed in curly braces.
+
+```chsharp
 using System;
 
 // A namespace to organize code
@@ -135,18 +137,24 @@ namespace AnimalWorld
         // Fields, Properties, Methods, etc. go here <Body>
     }
 }
-
+```
 
 
 ## Access modifier
 Access modifiers (public, private, protected, internal) control the visibility of classes and their members.
 
-Visibility Notation
+## Visibility Notation
 Visibility notations indicate the access level of attributes and methods. Common visibility notations include:
 + for public (visible to all classes)
 - for private (visible only within the class)
 # for protected (visible to subclasses)
 ~ for package or default visibility (visible to classes in the same package)
+| Symbol | Visibility |
+|---|---|
+| `+` | Public |
+| `-` | Private |
+| `#` | Protected |
+| `~` | Package/Internal |
 
 ## Class types
 Type of Class 
@@ -174,6 +182,16 @@ Record
 A special class (or struct, as of C# 10) type designed for data-centric scenarios, offering immutability and value-based equality with less boilerplate code.
 Data Transfer Objects (DTOs) and immutable data models.
 
+| Type | Description | Use Case |
+|---|---|---|
+| Concrete / Regular | Standard class instantiated with `new` | Most real-world entities |
+| Abstract | Cannot be instantiated directly | Shared behavior and structure |
+| Static | Cannot be instantiated or inherited | Utility/helper classes |
+| Sealed | Prevents inheritance | Security/performance |
+| Partial | Split across multiple files | Large/generated code |
+| Generic | Uses type parameters | Reusable data structures |
+| Record | Data-centric immutable type | DTOs and immutable models |
+
 ## Object
 an object is a concrete instance of a class or struct (which acts as its blueprint) that exists in memory and combines data (fields/properties) with behavior (methods).
 
@@ -194,6 +212,7 @@ Contains the actual data/values for its properties and can perform actions.
 
 
 ### 1. Class Definition
+```csharp
 public class Car // This is the blueprint (class definition)
 {
     // Properties (data/state)
@@ -206,10 +225,12 @@ public class Car // This is the blueprint (class definition)
         Console.WriteLine($"The {Color} car is driving.");
     }
 }
+```
 
 ### 2. Object Creation (Instantiation)
 Next, you create an object (an instance) of that class using the new keyword.
 
+```csharp
 class Program
 {
     static void Main()
@@ -225,7 +246,7 @@ class Program
         myCar.Drive(); // Output: The Red car is driving.
     }
 }
-
+```
 Each object of the Car class has its own unique state (e.g., one is "Red", another might be "Blue"), but they share the methods defined by the class.
 
 
@@ -237,6 +258,7 @@ The term "class member" is an umbrella term that refers to all the components of
 A field is a variable declared directly within a class or a struct that stores data or the state of an object. They are typically kept private to support the principle of encapsulation.
 
 ## Basic Syntax
+```csharp
 public class Person
 {
     // This is a private field (best practice)
@@ -257,8 +279,15 @@ public class Person
         }
     }
 }
+```
+# Field vs Property
 
-
+| Feature | Field | Property |
+|---|---|---|
+| Purpose | Stores data directly | Controlled data access |
+| Implementation | Variable | `get` / `set` accessors |
+| Access Control | Symmetric | Asymmetric possible |
+| Validation | None | Can contain logic |
 
 Feature 
 Field
@@ -293,7 +322,7 @@ Syntax: From outside the class, a property is accessed using the same simple syn
 
 ## Basic syntax - Field-Backed Properties
 For logic such as validation or computation, you explicitly declare a private field and provide custom logic within the accessors.
-
+```csharp
 public class Person
 {
     private int _age; // private backing field
@@ -308,10 +337,11 @@ public class Person
             _age = value;
         }
     }
-}
+```
 
-Example usage
+Example usage:
 
+```csharp
 var person = new Person();
 
 // SET the property (calls the setter)
@@ -321,7 +351,7 @@ person.Age = 25;
 int age = person.Age;
 
 Console.WriteLine(age); // 25
-
+```
 
 # Method
 A method is a reusable block of code within a class that performs a specific task when called. Methods allow you to organize your code, improve readability, and avoid repetition by defining code once and using it many times.
@@ -329,11 +359,12 @@ A method is a reusable block of code within a class that performs a specific tas
 ## Basic Syntax
 The structure of a method declaration (or signature) includes several components: 
 
+```csharp
 <Access Modifier> <Optional Modifiers> <Return Type> <Method Name>(<Parameters>)
 {
     // Method body (statements and logic)
 }
-
+```
 Access Modifier: Defines the visibility of the method, e.g., public or private (private is the default).
 
 Optional Modifiers: Such as static, which means the method belongs to the class itself rather than an instance of the class, or async for asynchronous operations.
@@ -345,8 +376,9 @@ Method Name: A unique, descriptive identifier, typically using PascalCase (e.g.,
 Parameters: A list of input values the method accepts, enclosed in parentheses. Parameters are optional; an empty set of parentheses () means the method takes no input.
 
 
-Example
+Example:
 
+```csharp
 using System;
 
 class Program
@@ -368,6 +400,7 @@ class Program
         return sum;
     }
 }
+```
 
 ## Key Concepts
 Calling a Method: A method is executed by using its name followed by parentheses (). If it belongs to an object instance, you use the object name followed by a dot (e.g., myObject.DoSomething()).
@@ -437,6 +470,7 @@ Interfaces and overrides must match signatures
 Namespace
 a namespace is a logical container used to organize related types (classes, structs, interfaces, enums, delegates) and prevent naming conflicts. It provides a naming scope, much like folders in a file system organize files.
 Basic Syntax
+```csharp
 namespace Company.ProjectName
 {
     class MyClass
@@ -444,7 +478,7 @@ namespace Company.ProjectName
         // Class members
     }
 }
-
+```
 
 
 
@@ -469,7 +503,8 @@ Members: Interface members are public by default and, in older C# versions, were
 No Fields or Constructors: Interfaces cannot contain instance fields or constructors because they define behavior, not state.
 
 
-Example Usage
+Example Usage:
+```csharp
 // 1. Declare the interface (the contract)
 public interface IAnimal
 {
@@ -512,6 +547,7 @@ class Program
         Console.WriteLine($"Legs: {myDog.LegCount}"); // Output: Legs: 4
     }
 }
+```
 
 # Interface vs Inheritance
 
