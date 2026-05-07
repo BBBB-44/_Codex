@@ -1,3 +1,6 @@
+---
+---
+
 ## Class
 a class is a blueprint or template for creating objects, encapsulating data (fields, properties and constants) and behavior (methods, events, constructors and nested types) into a single unit. 
 
