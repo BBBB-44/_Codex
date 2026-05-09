@@ -9,6 +9,20 @@ You can automate a repeatable setup for Windows Sandbox by using:
 
 That way, every time the sandbox opens, it automatically installs apps, downloads files, maps folders, and launches your environment.
 
+List of what to install :
+'''
+opera
+.net
+sublime text and/or vs studio
+cursor
+git
+'''
+
+how to reduce boilerplate
+'''
+insignify
+'''
+
 ---
 
 # 1. Enable Windows Sandbox
