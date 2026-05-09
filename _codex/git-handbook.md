@@ -20,3 +20,25 @@ Navigate into the repository and run:
 git config user.name "Your Name"
 git config user.email "your-account-email@example.com"
 ```
+
+# List all changes
+Shows line-by-line changes in all modified files (unstaged changes).
+```
+git diff
+```
+
+# File specific changess
+```
+git diff fileName.txt
+```
+
+# Short summary of all changes
+Shows line-by-line changes in all modified files (unstaged changes).
+```
+git diff --stat
+```
+Example output:
+```
+...SessionRoleAuthorizeAttribute.cs | 12 +++---
+...Mastermind.csproj                |  3 ++-
+```  
