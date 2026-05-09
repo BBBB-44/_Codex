@@ -16,6 +16,7 @@ opera
 sublime text and/or vs studio
 cursor
 git
+notepad ++
 '''
 
 how to reduce boilerplate
