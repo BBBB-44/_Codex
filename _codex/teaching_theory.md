@@ -13,6 +13,39 @@ Two fundamental principles in effective teaching are:
 
 ---
 
+# Teaching Requires Empathy
+Experts often forget what beginners do not know.
+A good teacher remembers:
+terminology may be unfamiliar
+assumptions may be unclear
+concepts that feel “obvious” to experts are not obvious to beginners
+Teaching improves when explanations are adapted to the learner’s current understanding.
+
+---
+
+# Questions Are Extremely Valuable
+Questions reveal:
+misunderstandings
+assumptions
+gaps in knowledge
+curiosity
+A learner asking questions is usually engaged, not difficult.
+Encouraging questions improves learning quality significantly.
+
+---
+
+# Practice Is Essential
+Understanding theory is not the same as being able to apply it.
+People improve through:
+repetition
+application
+experimentation
+mistakes
+correction
+Skill development requires active use, not just observation.
+
+---
+
 # Humans Need Encouragement
 
 People learn better when they feel supported.
@@ -178,6 +211,61 @@ As confidence grows:
 * curiosity increases
 * fear of mistakes decreases
 * independent thinking improves
+
+---
+
+# Repetition Strengthens Memory
+People rarely remember something after hearing it once.
+Important concepts should be repeated through:
+summaries
+exercises
+examples
+reviews
+teaching the concept in different ways
+Repetition moves information from short-term memory into long-term memory.
+
+---
+
+# Simplicity Before Complexity
+Beginners become overwhelmed when too much complexity is introduced too early.
+Good teaching usually follows this progression:
+simple concepts
+    -> basic examples
+        -> guided practice
+            -> advanced concepts
+Build foundations first before introducing edge cases or advanced theory.
+
+---
+
+# People Learn Better With Examples
+Abstract explanations are harder to understand.
+Concrete examples make concepts easier to visualize and apply.
+For example:
+Instead of only saying:
+A variable stores data.
+Show:
+String name = "Alice";
+Examples connect theory to practical understanding.
+
+---
+
+# Curiosity Improves Learning
+People remember information better when they are curious.
+One effective technique is introducing a problem before explaining the solution.
+Example:
+Why does this code crash?
+This creates a mental need for the explanation, increasing attention.
+
+---
+
+# Overloading Learners Reduces Retention
+Too much information at once causes cognitive overload.
+Signs include:
+confusion
+zoning out
+inability to follow explanations
+forgetting recent material
+Good teaching controls information density.
 
 ---
 
