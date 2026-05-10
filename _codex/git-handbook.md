@@ -41,4 +41,18 @@ Example output:
 ```
 ...SessionRoleAuthorizeAttribute.cs | 12 +++---
 ...Mastermind.csproj                |  3 ++-
-```  
+```
+
+# list everything in a repo except files ignored by .gitignore
+```
+git ls-files --cached --others --exclude-standard
+```
+What it does:
+--cached → includes tracked files
+--others → includes untracked files
+--exclude-standard → applies .gitignore, .git/info/exclude, and global gitignore
+
+# If you want it for a specific folder
+```
+git ls-files --cached --others --exclude-standard -- .\your-folder\
+```
