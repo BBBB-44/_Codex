@@ -4,17 +4,14 @@
 subject to explore :
 
 ```
-to exlore : what are ts interface 
 how to decouple api and ui
 how to debug more efficiently : 
 step 1 : write down your problem, what you think migh cause it/be related to it and other things to verify.
 About internet longevity
-ergonomics
 graphic design
 User interface
 User experience
 markdown
-Blender
 font height, size, etc..
 how to use github as a website.....
 seo
@@ -24,7 +21,7 @@ using github page to display the codex, or maybe wordpress?
 the myth of information nesting : why is it fundamentally wrong
 What are stack traces
 how to use the network tabs
-effiency at arror message reading
+effiency at error message reading
 reommendation de produit
 About movies...
 How to give more personnality to my codex
