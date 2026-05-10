@@ -15,7 +15,7 @@ Then I moved on to Windows Sandbox. That also took longer than expected because 
 After all that setup work, I still had to manually install:
 - Git
 - Cursor
-- A lightweight IDE (I chose Sublime Text)
+- A lightweight IDE (I chose Sublime Text) wich also required downloading dotnet sdk.
 
 Then Cursor refused to work.
 
