@@ -74,3 +74,5 @@ I’m still interested in the idea of local AI coding agents though, especially 
 - and can better understand larger projects and environments
 
 There’s also a good chance I’m simply too inexperienced with these tools right now. Maybe the workflow improves once you know which tools fit which use cases.
+
+At least I ended up documenting the process of setting up a sandboxed environment, along with a reusable startup configuration to reduce repetitive setup and boilerplate downloads.
