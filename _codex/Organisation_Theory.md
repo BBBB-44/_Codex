@@ -1,7 +1,7 @@
 ---
 ---
 
-## Suggestion
+# Suggestion
 
 If you want one rule to anchor the whole project, use this: **store notes for retrieval, not just storage**. In practice that means each note should answer:  
 - “What is this about?”  
@@ -10,9 +10,20 @@ If you want one rule to anchor the whole project, use this: **store notes for re
 
 ---
 
-## What to avoid
+# What to avoid
 
 Avoid overbuilding taxonomy too early. Too many tags, folders, or rigid categories can make the system harder to maintain than the notes themselves. It is usually better to start simple and let structure emerge from actual use, then refine the organization as patterns appear.
+
+## The mistake most systems make
+
+People often try to force meaning into folder hierarchy:
+
+design/
+  typography/
+    layout/
+      branding/
+        logo/
+But concepts overlap naturally.
 
 ---
 
@@ -191,3 +202,345 @@ Handbook
 About?
 
 ---
+
+tldr :
+Keep code local until reuse is proven
+Better approach: organize by feature/domain
+Ideal depth : 2–4 levels deep maximum
+Folders = ownership boundaries NOT conceptual ontology
+
+For website **code structure**, the same principle still applies:
+
+> use folders for operational boundaries, not conceptual perfection.
+
+You generally do **not** want:
+
+* one giant flat folder
+* nor extremely deep nesting
+
+The best structure is usually:
+
+* shallow
+* feature-oriented
+* predictable
+* scalable
+
+---
+
+# The core mistake in website codebases
+
+A lot of projects organize by *technical type only*:
+
+```text id="nd9aqj"
+components/
+pages/
+hooks/
+utils/
+styles/
+services/
+```
+
+This works at first.
+
+But as the app grows:
+
+* related code gets scattered everywhere
+* changing one feature touches 8 folders
+* navigation becomes painful
+* mental overhead increases
+
+This is similar to overusing tags in knowledge systems.
+
+---
+
+# Better approach: organize by feature/domain
+
+Instead of:
+
+```text id="k2yx0j"
+components/
+  Button.tsx
+  Navbar.tsx
+  Logo.tsx
+
+pages/
+  dashboard.tsx
+  profile.tsx
+
+services/
+  auth.ts
+```
+
+Prefer:
+
+```text id="z8ppar"
+features/
+  auth/
+  dashboard/
+  editor/
+  marketing/
+```
+
+Each feature contains:
+
+* UI
+* logic
+* hooks
+* tests
+* styles
+* types
+
+together.
+
+---
+
+# Example scalable structure
+
+```text id="n9g4df"
+src/
+├── app/                # routing / app entry
+├── features/
+│   ├── auth/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── types.ts
+│   │   └── index.ts
+│   │
+│   ├── typography/
+│   └── editor/
+│
+├── shared/
+│   ├── ui/
+│   ├── utils/
+│   ├── types/
+│   └── constants/
+│
+├── content/
+├── styles/
+└── tests/
+```
+
+This scales much better than purely technical folders.
+
+---
+
+# Why this works
+
+Because most work happens **inside a feature boundary**.
+
+If you're working on typography:
+
+* UI
+* state
+* API
+* styles
+* validation
+
+are usually all related.
+
+Keeping them together reduces:
+
+* search time
+* cognitive switching
+* import chaos
+
+---
+
+# “Wouldn't everything in one folder be painful?”
+
+Yes.
+
+A truly flat codebase becomes impossible after a certain size.
+
+Example nightmare:
+
+```text id="cx5a4o"
+Button.tsx
+Button2.tsx
+ButtonNew.tsx
+Header.tsx
+HeaderAlt.tsx
+HeaderMobile.tsx
+useAuth.ts
+useTheme.ts
+authService.ts
+themeService.ts
+```
+
+This creates:
+
+* collisions
+* scanning fatigue
+* unclear ownership
+
+Humans still need grouping.
+
+---
+
+# But deep nesting is also bad
+
+This becomes equally painful:
+
+```text id="x7g7ol"
+src/client/application/components/layout/navigation/sidebar/mobile/
+```
+
+Problems:
+
+* long imports
+* fragile refactors
+* hard navigation
+* path-length issues
+* context loss
+
+---
+
+# Ideal depth
+
+Usually:
+
+* 2–4 levels deep maximum
+* feature folders at the top
+* local organization inside features
+
+Good:
+
+```text id="r3f7p8"
+features/editor/components/
+```
+
+Bad:
+
+```text id="8f8a25"
+core/application/frontend/editor/ui/components/internal/shared/
+```
+
+---
+
+# Separation of concerns still matters
+
+You mentioned this earlier and it absolutely applies to code.
+
+Example:
+
+Bad:
+
+```text id="hyef93"
+components/
+  RecipeCard.tsx
+  RecipeEditor.tsx
+  RecipeAnalytics.tsx
+```
+
+These may represent:
+
+* UI rendering
+* editing workflow
+* business logic
+
+which evolve differently.
+
+Instead:
+
+```text id="lnm0h3"
+features/
+  recipes/
+    components/
+    analytics/
+    editor/
+```
+
+---
+
+# Shared vs local code
+
+One of the most important rules:
+
+## Keep code local until reuse is proven
+
+Do NOT prematurely move things into:
+
+```text id="w4f3hj"
+shared/
+common/
+utils/
+helpers/
+```
+
+This creates “junk drawer architecture.”
+
+Instead:
+
+* keep code near the feature
+* extract only after real reuse emerges
+
+This is exactly like avoiding premature taxonomy in notes.
+
+---
+
+# A very effective mental model
+
+## Folders = ownership boundaries
+
+NOT conceptual ontology.
+
+A folder should answer:
+
+> “What changes together?”
+
+not:
+
+> “What category does this philosophically belong to?”
+
+This is the key distinction.
+
+---
+
+# Recommended modern structure
+
+For most websites/apps:
+
+```text id="up0tz2"
+src/
+├── app/          # app shell / routes
+├── features/     # business domains
+├── shared/       # true shared primitives
+├── content/      # md/mdx/json/cms
+├── styles/
+├── assets/
+└── tests/
+```
+
+Inside a feature:
+
+```text id="d6q7rj"
+features/editor/
+├── components/
+├── hooks/
+├── api/
+├── state/
+├── utils/
+├── types.ts
+└── index.ts
+```
+
+---
+
+# The real scalability trick
+
+Not folder hierarchy.
+
+The real scalability trick is:
+
+* strong naming
+* stable conventions
+* feature boundaries
+* local cohesion
+* shallow hierarchy
+* metadata/config over structure
+
+Exactly the same principle as knowledge architecture.
+
+
+
