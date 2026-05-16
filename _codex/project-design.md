@@ -91,6 +91,9 @@ Don’t guess what users want—let them tell you.
 - **How:** Add a simple “Was this helpful?” button, a feedback form, or a direct chat link. Then actually read it.
 - **The cycle:** Build → Measure (metrics) → Learn (feedback) → Repeat.
 
+### 15. Act fast
+why? To stop potential copy cat, to confirm interest, and because what you are working on is most likely trivial in the long term.
+
 ## Final Thought: Success Is Designed, Not Discovered
 
 The rules are simple. Following them is hard. But that’s why most projects fail.
