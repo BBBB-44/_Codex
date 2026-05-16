@@ -5,7 +5,7 @@
 
 Semiotic inquiry overlaps in various ways with linguistics and communication theory. It shares with linguistics the interest in the analysis of sign systems, examining the meanings of words, how they are combined to form sentences, and how they convey messages in concrete contexts.
 
-<img width="3063" height="2427" alt="Pioneer_plaque_(transparent)" src="https://github.com/user-attachments/assets/e6759fe2-5fe4-4cbe-a5b1-677079042120" />
+<img width="100%" alt="Pioneer_plaque_(transparent)" src="https://github.com/user-attachments/assets/e6759fe2-5fe4-4cbe-a5b1-677079042120" />
 <img width="960" height="591" alt="GPN-2000-001621-x" src="https://github.com/user-attachments/assets/87d3e27d-6cf3-4e97-bc25-10b1e7c29845" />
 
 The Pioneer plaque
