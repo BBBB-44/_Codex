@@ -8,6 +8,7 @@
         width: 500px;
         height: 200px;
         border: 1px solid #ccc;
+        user-select: none;
       }
     </style>
   </head>
@@ -23,37 +24,39 @@
       let isDragging = false;
       let startX, startY, rectX, rectY;
 
-      rect.addEventListener('mousedown', (e) => {
+      function startDrag(e) {
         isDragging = true;
-        startX = e.clientX;
-        startY = e.clientY;
+        startX = e.clientX ?? e.touches[0].clientX;
+        startY = e.clientY ?? e.touches[0].clientY;
         rectX = parseFloat(rect.getAttribute('x'));
         rectY = parseFloat(rect.getAttribute('y'));
         e.preventDefault();
-      });
+      }
 
-rect.addEventListener('mousedown', startDrag);
-rect.addEventListener('touchstart', startDrag, { passive: false });
-
-window.addEventListener('mousemove', moveDrag);
-window.addEventListener('touchmove', moveDrag, { passive: false });
-
-window.addEventListener('mouseup', endDrag);
-window.addEventListener('touchend', endDrag);
-
-
-
-      window.addEventListener('mousemove', (e) => {
+      function moveDrag(e) {
         if (!isDragging) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
+        const x = e.clientX ?? e.touches[0].clientX;
+        const y = e.clientY ?? e.touches[0].clientY;
+        const dx = x - startX;
+        const dy = y - startY;
         rect.setAttribute('x', rectX + dx);
         rect.setAttribute('y', rectY + dy);
-      });
+        e.preventDefault();
+      }
 
-      window.addEventListener('mouseup', () => {
+      function endDrag(e) {
         isDragging = false;
-      });
+      }
+
+      // Mouse events
+      rect.addEventListener('mousedown', startDrag);
+      window.addEventListener('mousemove', moveDrag);
+      window.addEventListener('mouseup', endDrag);
+
+      // Touch events
+      rect.addEventListener('touchstart', startDrag, { passive: false });
+      window.addEventListener('touchmove', moveDrag, { passive: false });
+      window.addEventListener('touchend', endDrag);
     </script>
   </body>
 </html>
