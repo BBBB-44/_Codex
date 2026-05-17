@@ -6,7 +6,8 @@ download this file : https://www.sec.gov/pdf/handbook.pdf
 subject to explore :
 
 ```
-write an article about data/information diagram, mindmap, brainstorming, the use of mimind app, then recently plantuml and mermaid, and lastly possibly a custom solution. 
+write an article about data/information diagram, mindmap, brainstorming, the use of mimind app, then recently plantuml and mermaid, and lastly possibly a custom solution.
+Write an article about data backup philosophy
 What are promise interace
 About movies...
 How to give more personnality to my codex
