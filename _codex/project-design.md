@@ -97,3 +97,7 @@ why? To stop potential copy cat, to confirm interest, and because what you are w
 ## Final Thought: Success Is Designed, Not Discovered
 
 The rules are simple. Following them is hard. But that’s why most projects fail.
+
+## 16. Verify if tools or systems exist before making them.
+Remember : The goal is the project, not the tool.
+Note : Slack system (internal communication tool) became the product...
