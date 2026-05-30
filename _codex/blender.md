@@ -59,3 +59,15 @@ Open the Shading workspace or the Node Editor.
 Locate your image file in your computer’s file browser.
 Drag and drop the image file directly into the Node Editor. This automatically creates an Image Texture node. 
 Connect the Color output of the Image Texture node to the Base Color input of the Principled BSDF node.
+
+
+## How to Import Animation (FBX) to Switch Character Animations (Blender 3.4)
+1. Select your character's armature (rig) in the viewport.
+2. Switch to the Animation workspace or change an area to the Dope Sheet editor.
+3. At the top of the Dope Sheet, change the mode from "Dope Sheet" to Action Editor.
+4. In the Action Editor, you will see a dropdown menu containing all actions currently in the scene. Select a different animation to apply it to the rig.
+
+# Fly/Walk Navigation for camera view
+1. Activate Fly Mode: Press Shift +  ` (tilde key).
+2. Navigate: Use your mouse to aim, and W, A, S, D keys to move forward, left, backward, and right.
+
